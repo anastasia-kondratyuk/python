@@ -1,8 +1,8 @@
 from math import *
 from sys import *
 
-for n in argv[1:]:
-    if float(n) > 0:
-        print("ln(%d)" % float(n), " = ", log(float(n)))
+for n in range(1, len(argv)):
+    if float(argv[n]) > 0:
+        print("ln(%g)" % float(argv[n]), " = ", log(float(argv[n])))
     else:
-        print("ln(%d)" % float(n), " is illegal")
+        print("ln(%g)" % float(argv[n]), " is illegal")
